@@ -1,0 +1,19 @@
+{
+  "name": "inputtags",
+  "version": "0.0.1",
+  "description": "A simple tag input library in vanila javascript.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeepMondal2001/InputTags.git"
+  },
+  "author": "Deep Mondal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DeepMondal2001/InputTags/issues"
+  },
+  "homepage": "https://github.com/DeepMondal2001/InputTags#readme"
+}

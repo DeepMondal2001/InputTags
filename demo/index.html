@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../dist/stylesheets/inputTag.css">
+    <script src="../dist/js/tag-input.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
+</head>
+<body>
+       <div id="tags">
+           <input type="text" id="add_tag" placeholder="Add a tag......">
+           <div class="tags_dropdown">
+
+           </div>
+       </div>
+</body>
+<script>
+    new inputTags({
+        asd : true,
+       id: 'add_tag',
+       tags : ['html', 'css', 'js', 'php', 'sql'],
+       maxTags : 20,
+       allowDuplicateTags : false,
+       onTagRemove : function (tag) {
+         alert( tag + "Tag is going to be removed");
+       },
+    });
+
+</script>
+</html>

@@ -1,0 +1,67 @@
+
+$tag-bg-color : #8cce0c;
+$tag-color : #FFFFFF;
+$tag-close-hover-bg-color : rgba(215, 65, 70, 0.87);
+
+#tags{
+  margin: 100px auto 0 auto;
+  max-width: 600px;
+  border: 1px solid #cccccc7a;
+  padding: 5px;
+
+  //.duplicate{
+  //  transform: scale(1.1);
+  //  background: darken($tag-bg-color, 7%) !important;
+  //}
+
+  .tags_dropdown{
+
+  }
+
+  .tag{
+    position: relative;
+    display: block;
+    float: left;
+    color: $tag-color;
+    background: $tag-bg-color;
+    padding: 5px 20px 5px 5px;
+    margin: 4px;
+    border-radius: 2px;
+    font-size: 12px;
+    line-height: 12px;
+    font-family: "Lato Heavy";
+    transition: all 0.3s ease-in-out;
+
+    .close{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 14px;
+      height: 100%;
+      background: darken($tag-bg-color, 7%);
+      cursor: pointer;
+      border-radius: 0 2px 2px 0;
+      transition: background 0.3s;
+      &:after{
+        position:absolute;
+        content:"×";
+        top: 6px;
+        left: 3px;
+        font-weight: 900;
+      }
+
+      &:hover{
+        background: $tag-close-hover-bg-color;
+      }
+
+    }
+  }
+
+  input{
+    border:0;
+    margin:4px;
+    padding:3px 7px 3px 0;
+    width:auto;
+    outline: none;
+  }
+}
